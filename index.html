@@ -13,24 +13,29 @@
 </head>
 <body>
     <!--header-->
-    <header >
-<div class="header">
+<header >
+
+    <div class="header">
         <!--logo-->
        <div class="logo">
          <img src="imagenes/logotravel.jpg" alt="logo"></div>
 
           <!--barra de navegacion-->
-   <nav >
-    <ul class="navbar">
-       <li> <a href="#quienes somos">Quienes Somos</a></li>
-       <li> <a href="#servicios">Servicios</a></li>
-        <li><a href="#tarifas">Promociones</a></li>
-       <li> <a href="#formulario">Contacto</a></li></ul>
-    </nav></></div></header>
+     <nav >
+      <ul class="navbar">
+         <li> <a href="#quienes somos">Quienes Somos</a></li>
+         <li> <a href="#servicios">Servicios</a></li>
+         <li><a href="#cotizaciones">Promociones</a></li>
+         <li> <a href="#formulario">Contacto</a></li>
+      </ul>
+     </nav></>
+    </div>
+
+</header>
     
-    <main>
+<main>
         <!--quienes somos-->
-<section class = "content who">
+  <section class = "content who">
 
     <h2 class="title" id="quienes somos">Quienes Somos</h2>
 
@@ -39,27 +44,29 @@
         con una experiencia de mas de 10 años y una pasión infinita por el turismo.
         Ofrecemos todo tipo de tours con experiencias inolvidables, los mejores precios y servicios, 
         con una calidad equivalente a tus expectativas y mas de 2 mil opiniones positivas.</p></div>
-    <div class="somos"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, exercitationem 
-    aut tempore adipisci tempora voluptas porro tenetur magnam quod delectus voluptate eum
-     nobis esse omnis est, eaque consectetur. Eum, neque?</p></div></div>
-</section>
+    
+  </section>
 <!--servicios-->
 <section class="content services">
 
     <h2 class="title" id="servicios">Servicios</h2>
    
     <div class="contenedor">
-        <div class="servicio1"><p>Travel Agency te propone las mejores ofertas y oportunidades para que viajes  sin gastar de más.
-        Buscamos brindarte la mejor y más personalizada atención para que hagas de tus vacaciones un momento de relax y descanso. 
-      .</p></div>
+        <div class="servicio1">
+            <p>Travel Agency te propone las mejores ofertas y oportunidades para que viajes  sin gastar de más.
+        Buscamos brindarte la mejor y más personalizada atención para que hagas de tus vacaciones un momento de relax y descanso. Aprovechá nuestras oportunidades en vuelos baratos, promociones aéreas, hoteles,
+        paquetes turísticos, alquiler de autos, actividades, cruceros y seguros de viaje.</p>
+        </div>
 
-       <div class="servicio2"><p> Aprovechá nuestras oportunidades en vuelos baratos, promociones aéreas, hoteles,
-            paquetes turísticos, alquiler de autos, actividades, cruceros y seguros de viaje. Llegamos a todo el planeta: Argentina, 
+        <div class="servicio2">
+        <p>  Llegamos a todo el planeta: Argentina, 
        Brasil, Caribe, Estados Unidos, Europa y miles de destinos más. Empezá a disfrutar ahora de tu viaje comprando
-       con el mejor precio y la mejor financiación en Travel Agency.</p></div> </div>
+       con el mejor precio y la mejor financiación en Travel Agency.</p>
+        </div> 
+   </div>
 
 <!--slider-->
-       <div class="slider-frame">
+    <div class="slider-frame">
         <ul>
             <li><img src="imagenes/slider/slider1.jpg" alt="imagen1"></li>
             <li><img src="imagenes/slider/slider2.jpg" alt="imagen2"></li>
@@ -67,28 +74,70 @@
             <li><img src="imagenes/slider/slider4.jpg" alt="imagen4"></li>
         </ul>
     </div>
-    <ul class="list-services">
-        <li><a href="#">Paquetes</a><img src="imagenes/iconos/pasajeroicon.png" alt="pasajero"></li>
-<li><a href="#">Vuelos</a><img src="imagenes/iconos/agenciaicon.png" alt="agencia"></li>
-        <li><a href="#">Alojamiento</a><img src="imagenes/iconos/hotelicon.png" alt="hotel"></li>
-    </ul>
+        <ul class="list-services">
+            <li><a href="#">Paquetes</a><img src="imagenes/iconos/pasajeroicon.png" alt="pasajero"></li>
+            <li><a href="#">Vuelos</a><img src="imagenes/iconos/agenciaicon.png" alt="agencia"></li>
+            <li><a href="#">Alojamiento</a><img src="imagenes/iconos/hotelicon.png" alt="hotel"></li>
+        </ul>
 </section>
-<!--tarifas-->
-<section class="tarifas" id="tarifas">
+<!--promociones-->
+
+    <form class="promociones" id="cotizaciones" >
+        <h3>COTIZA TU VIAJE</h3>
+        <br>
+        <input class= "opciones" type="text" placeholder="Ingresa tu Nombre"> 
+        <input class= "opciones" type="email" placeholder="Ingresa tu Email"> 
+        <input class= "opciones" type="text" placeholder="Fecha de Salida"> 
+        <input class= "opciones" type="text" placeholder="Fecha de Regreso"> 
+        
+       <!--opciones-->
+        <select class="opciones" id="pasajeros">
+            <option selected>Pasajeros</option>
+            <option value="1">2</option>
+            <option value="2">4</option>
+            <option value="3">6</option>
+            <option value="4">mas</option>
+        </select>
     
-<div class="title"><h2>Promociones</h2><img src="imagenes/promociones.jpg" alt="promociones"></div>
+        <select class="opciones" id="destino"> 
+            <option selected>Destino</option>
+            <option value="1">Nacional</option>
+            <option value="2">Internacional</option>
+        </select>
+        
+        <select class="opciones" id="hospedaje">
+           <option selected>Hospedaje</option>
+           <option value="1">Hotel</option>
+           <option value="2">Cabaña</option>
+           <option value="3">Hostel</option>
+       </select>
+       <select class="opciones" id="vehiculo">
+           <option selected>Vuelo</option>
+           <option value="1">Economico</option>
+           <option value="2">Primera clase</option>
+       </select>
+           <P class="p-form-1">Completa nuestro fomulario y te enviaremos cotizaciones de acuerdo a tus elecciones</P>
+        <button type="submit" class="boton-1">ENVIAR</button>
+    </form>
+        <div class="title"><h2>Promociones</h2><img src="imagenes/promociones.jpg" alt="promociones"></div>
 </section>
+
 <!--localizacion-->
-<section class="content-localization" id="localizacion">
+
+    <section class="content-localization" id="localizacion">
+    
     <h2 class="title">Ubicacion</h2>
-   <div class="ubicacion"> <p>Travel Agency se encuentra en Av. San Martin 1410, en Barrio Palermo, Ciudad de Buenos Aires, podes por tren, desde la estación Retiro o los colectivos que llegan son: por Av. Presidente Perón, 
+
+    <div class="ubicacion"> <p>Travel Agency se encuentra en Av. San Martin 1410, en Barrio Palermo, Ciudad de Buenos Aires, podes por tren, desde la estación Retiro o los colectivos que llegan son: por Av. Presidente Perón, 
        líneas 176 y 182; por Ruta 24 (ex 197) desde la Est. José C. Paz
-       , las líneas 365, 315, 391, 440, 449 y 749.</p></div>
-    <figure>
-        <img class = "localizacion" src="imagenes/ubicacion.jpg" alt="localizacion">
-    </figure>
+       , las líneas 365, 315, 391, 440, 449 y 749.</p>
+    </div>
+    <figure><img class = "localizacion" src="imagenes/ubicacion.jpg" alt="localizacion"></figure>
+
+   </section>
+    
 <!--formulario de contacto-->
-    </section>
+ 
     <h2 class="formulario1">FORMULARIO DE CONTACTO</h2>
    <form action="" class="formulario" id="formulario">
     
@@ -96,7 +145,7 @@
      <div class="formulario--grupo formulario--grupo-correcto formulario--grupo-incorrecto" id= "grupo--nombre">
         <label for="nombre" class="formulario--label">Nombre</label>
         <div class="formulario--grupo-input">
-            <input type="text" class="formulario--input" name="nombre"nombre id="nombre" placeholder="nombre">
+            <input type="text" class="formulario--input" name="nombre"nombre id="nombre" placeholder="Nombre">
         </div>
         <p class="formulario--input-error">El nombre debe contener entre 1 y 40 digitos y deben ser letras</p>
         </div>
@@ -104,7 +153,7 @@
     <div class="formulario--grupo formulario--grupo-correcto formulario--grupo-incorrecto" id= "grupo--apellido">
         <label for="apellido" class="formulario--label">Apellido</label>
         <div class="formulario--grupo-input">
-            <input type="text" class="formulario--input" name="apellido" id="apellido" placeholder="apellido">
+            <input type="text" class="formulario--input" name="apellido" id="apellido" placeholder="Apellido">
         </div>
         <p class="formualrio--input-error">El apellido debe contener entre 1 y 40 digitos y deben ser letras</p>
     </div>
@@ -112,7 +161,7 @@
     <div class="formulario--grupo formulario--grupo-correcto formulario--grupo-incorrecto" id= "grupo--telefono">
         <label for="telefono" class="formulario--label">Telefono</label>
         <div class="formulario--grupo-input">
-            <input type="text" class="formulario--input" name="telefono" id="telefono" placeholder="telefono">
+            <input type="text" class="formulario--input" name="telefono" id="telefono" placeholder="Telefono">
         </div>
         <p class="formualrio--input-error">El numero de telefono debe contener entre 7 y 14 digitos numericos</p>
     </div>
@@ -120,7 +169,7 @@
     <div class="formulario--grupo formulario--grupo-correcto formulario--grupo-incorrecto" id= "grupo--email">
         <label for="email" class="formulario--label">Email</label>
         <div class="formulario--grupo-input">
-            <input type="text" class="formulario--input" name="email" id="email" placeholder="email">
+            <input type="text" class="formulario--input" name="email" id="email" placeholder="Email">
         </div>
         <p class="formualrio--input-error">La direccion de email debe ser valida</p>
     </div>
@@ -142,17 +191,16 @@
     <li><a href="#">Twiter</a><img src="imagenes/iconos/002-twitter.png" alt="twiter"></li>
     <li><a href="#">Whatsapp</a><img src="imagenes/iconos/004-whatsapp.png" alt="whatsapp"></li>
 </ul>
-<nav >
+   <nav >
     <ul class="pie1">
        <li> <a href="#quienes somos">Quienes Somos</a></li>
        <li> <a href="#servicios">Servicios</a></li>
-        <li><a href="#tarifas">Promociones</a></li>
+       <li><a href="#tarifas">Promociones</a></li>
        <li> <a href="#formulario">Contacto</a></li></ul>
     </nav>
 <p>Todos los derechos reservados a Travel Agency- E.V.T. Leg. 14771 - Disp. N 671</p>
 </div>
 </footer>
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script src="script.js"></script>
-   </body>
+</body>
 </html>
