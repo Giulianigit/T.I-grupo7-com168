@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!--header-->
+    <header >
+<div class="header">
+        <!--logo-->
+       <div class="logo">
+         <img src="imagenes/logotravel.jpg" alt="logo"></div>
+
+          <!--barra de navegacion-->
+   <nav >
+    <ul class="navbar">
+       <li> <a href="#quienes somos">Quienes Somos</a></li>
+       <li> <a href="#servicios">Servicios</a></li>
+        <li><a href="#tarifas">Promociones</a></li>
+       <li> <a href="#formulario">Contacto</a></li></ul>
+    </nav></></div></header>
+    
+    <main>
+        <!--quienes somos-->
+<section class = "content who">
+
+    <h2 class="title" id="quienes somos">Quienes Somos</h2>
+
+    <div class="contenedor">
+    <div class="quienes"><p>Nos enorgullece afirmar que somos la empresa líder en tours a diversos destinos
+        con una experiencia de mas de 10 años y una pasión infinita por el turismo.
+        Ofrecemos todo tipo de tours con experiencias inolvidables, los mejores precios y servicios, 
+        con una calidad equivalente a tus expectativas y mas de 2 mil opiniones positivas.</p></div>
+    <div class="somos"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, exercitationem 
+    aut tempore adipisci tempora voluptas porro tenetur magnam quod delectus voluptate eum
+     nobis esse omnis est, eaque consectetur. Eum, neque?</p></div></div>
+</section>
+<!--servicios-->
+<section class="content services">
+
+    <h2 class="title" id="servicios">Servicios</h2>
+   
+    <div class="contenedor">
+        <div class="servicio1"><p>Travel Agency te propone las mejores ofertas y oportunidades para que viajes  sin gastar de más.
+        Buscamos brindarte la mejor y más personalizada atención para que hagas de tus vacaciones un momento de relax y descanso. 
+      .</p></div>
+
+       <div class="servicio2"><p> Aprovechá nuestras oportunidades en vuelos baratos, promociones aéreas, hoteles,
+            paquetes turísticos, alquiler de autos, actividades, cruceros y seguros de viaje. Llegamos a todo el planeta: Argentina, 
+       Brasil, Caribe, Estados Unidos, Europa y miles de destinos más. Empezá a disfrutar ahora de tu viaje comprando
+       con el mejor precio y la mejor financiación en Travel Agency.</p></div> </div>
+
+<!--slider-->
+       <div class="slider-frame">
+        <ul>
+            <li><img src="imagenes/slider/slider1.jpg" alt="imagen1"></li>
+            <li><img src="imagenes/slider/slider2.jpg" alt="imagen2"></li>
+            <li><img src="imagenes/slider/slider3.jpg" alt="imagen3"></li>
+            <li><img src="imagenes/slider/slider4.jpg" alt="imagen4"></li>
+        </ul>
+    </div>
+    <ul class="list-services">
+        <li><a href="#">Paquetes</a><img src="imagenes/iconos/pasajeroicon.png" alt="pasajero"></li>
+<li><a href="#">Vuelos</a><img src="imagenes/iconos/agenciaicon.png" alt="agencia"></li>
+        <li><a href="#">Alojamiento</a><img src="imagenes/iconos/hotelicon.png" alt="hotel"></li>
+    </ul>
+</section>
+<!--tarifas-->
+<section class="tarifas" id="tarifas">
+    
+<div class="title"><h2>Promociones</h2><img src="imagenes/promociones.jpg" alt="promociones"></div>
+</section>
+<!--localizacion-->
+<section class="content-localization" id="localizacion">
+    <h2 class="title">Ubicacion</h2>
+   <div class="ubicacion"> <p>Travel Agency se encuentra en Av. San Martin 1410, en Barrio Palermo, Ciudad de Buenos Aires, podes por tren, desde la estación Retiro o los colectivos que llegan son: por Av. Presidente Perón, 
+       líneas 176 y 182; por Ruta 24 (ex 197) desde la Est. José C. Paz
+       , las líneas 365, 315, 391, 440, 449 y 749.</p></div>
+    <figure>
+        <img class = "localizacion" src="imagenes/ubicacion.jpg" alt="localizacion">
+    </figure>
+<!--formulario de contacto-->
+    </section>
+    <h2 class="formulario1">FORMULARIO DE CONTACTO</h2>
+   <form action="" class="formulario" id="formulario">
+    
+    <!--GRUPO NOMBRE-->
+     <div class="formulario--grupo formulario--grupo-correcto formulario--grupo-incorrecto" id= "grupo--nombre">
+        <label for="nombre" class="formulario--label">Nombre</label>
+        <div class="formulario--grupo-input">
+            <input type="text" class="formulario--input" name="nombre"nombre id="nombre" placeholder="nombre">
+        </div>
+        <p class="formulario--input-error">El nombre debe contener entre 1 y 40 digitos y deben ser letras</p>
+        </div>
+    <!--GRUPO APELLIDO-->
+    <div class="formulario--grupo formulario--grupo-correcto formulario--grupo-incorrecto" id= "grupo--apellido">
+        <label for="apellido" class="formulario--label">Apellido</label>
+        <div class="formulario--grupo-input">
+            <input type="text" class="formulario--input" name="apellido" id="apellido" placeholder="apellido">
+        </div>
+        <p class="formualrio--input-error">El apellido debe contener entre 1 y 40 digitos y deben ser letras</p>
+    </div>
+    <!--GRUPO TELEFONO-->
+    <div class="formulario--grupo formulario--grupo-correcto formulario--grupo-incorrecto" id= "grupo--telefono">
+        <label for="telefono" class="formulario--label">Telefono</label>
+        <div class="formulario--grupo-input">
+            <input type="text" class="formulario--input" name="telefono" id="telefono" placeholder="telefono">
+        </div>
+        <p class="formualrio--input-error">El numero de telefono debe contener entre 7 y 14 digitos numericos</p>
+    </div>
+    <!--GRUPO EMAIL-->
+    <div class="formulario--grupo formulario--grupo-correcto formulario--grupo-incorrecto" id= "grupo--email">
+        <label for="email" class="formulario--label">Email</label>
+        <div class="formulario--grupo-input">
+            <input type="text" class="formulario--input" name="email" id="email" placeholder="email">
+        </div>
+        <p class="formualrio--input-error">La direccion de email debe ser valida</p>
+    </div>
+     <!--terminos-->
+    <div class="formulario--grupo" id="grupo--terminos"><label class="formulario--label"><input type="checkbox" class = "formulario--checkbox" name="terminos" id="terminos">
+    Acepto los Terminos y Condiciones</label></div>
+    <div class="formulario--grupo-terminos formulario--grupo-btn-enviar">
+        <button class="formulario--btn" type="submit" >ENVIAR</button>
+        <p class=" formulario--mensaje-exitoso" id="formulario--mensaje-exitoso">Formulario enviado exitosamente!!!</p>
+    </div>
+</form>
+</main>
+
+<footer>
+    <div class="pie">
+<ul class="footer">
+    <li><a href="#">Instagram</a><img src="imagenes/iconos/001-instagram.png" alt="instagram"></li>
+    <li><a href="#">Facebook</a><img src="imagenes/iconos/003-facebook.png" alt="facebook"></li>
+    <li><a href="#">Twiter</a><img src="imagenes/iconos/002-twitter.png" alt="twiter"></li>
+    <li><a href="#">Whatsapp</a><img src="imagenes/iconos/004-whatsapp.png" alt="whatsapp"></li>
+</ul>
+<nav >
+    <ul class="pie1">
+       <li> <a href="#quienes somos">Quienes Somos</a></li>
+       <li> <a href="#servicios">Servicios</a></li>
+        <li><a href="#tarifas">Promociones</a></li>
+       <li> <a href="#formulario">Contacto</a></li></ul>
+    </nav>
+<p>Todos los derechos reservados a Travel Agency- E.V.T. Leg. 14771 - Disp. N 671</p>
+</div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="script.js"></script>
+   </body>
+</html>
