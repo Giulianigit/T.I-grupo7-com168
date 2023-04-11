@@ -59,12 +59,13 @@ body {
 
     /*quines somos*/
     .content {padding:80px 0;}
-    .who { 
+    .who {display: inline-block;
         background-image: url(imagenes/oceano.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover; 
         color: white;
+        width: 80%;
         margin: 50px;
         border-radius: 10px;
      }
@@ -95,7 +96,7 @@ body {
         padding: 20px;
         margin: 25px; 
      }
-    .list-services a {
+     .list-services a{
         display: flex; 
         justify-content: center;
         align-items: center;
@@ -108,6 +109,8 @@ body {
         background-color: black; 
         border-radius: 15px;
      }
+     .list-services img {width: 120px;height: 100px; padding: 15px; display: flex;}
+     .list-services img:hover {transform: scale(1.2);color:#095169;}
     .servicio1 {
         padding: 25px; 
         margin: 0px 10px;
@@ -167,7 +170,7 @@ body {
     /*Promociones*/
     .promociones {
         background-color:darkcyan; 
-        color: black;
+        color:black;
         font-size: 20px;
         width: 800px;
         height: 450px;
@@ -176,10 +179,12 @@ body {
         margin-top: 100px; 
         border-radius: 45px;
         }
-        .promociones:hover {transition:3s;background:url(imagenes/avion.jpg);}
+        .promociones:hover {transition:3s;background: url(imagenes/playa.avif);background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;}
     .promociones h3 {
         font-size: 30px;
-        color: black;
+        color: white;
         text-align: center;
         }
     .opciones {
@@ -213,7 +218,7 @@ body {
         background-color: black;
         margin: 20px;
         border-radius: 10px;
-        font-size: 20px;
+        font-size: 15px;
     }
     .boton {
         background-color: black;
