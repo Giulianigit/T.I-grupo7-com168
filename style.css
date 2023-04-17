@@ -9,25 +9,29 @@
 /*BODY*/
 body {
     text-align: center; 
-    font-family: Arial, Helvetica, sans-serif; 
-    background-color:#5a7f78;
+    font-family: 'Inter', sans-serif; 
     }
 
- h2 {
-    color: white; 
+h2 {
+    color: #0c0636; 
     font-size: 45px;
+    padding-bottom: 20px;
     font-family: 'Skranji', cursive;
-     }
+}
    
     /*HEADER*/
 .header {
     display: flex; 
     justify-content:space-between; 
     align-items: center;
-    height: 85px;padding: 5px 10%; 
+    height: 85px;
+    padding: 5px 10%; 
     width: 100%;
-    background:#0c0636;
-       }
+    background: #0c0636;
+    position: fixed;
+    top: 0;
+}
+
 .header .logo img {
     width: auto; 
     height: 70px;
@@ -35,59 +39,74 @@ body {
     border-radius: 50%;
    }
 .header .logo img:hover {transform: scale(1.2);}
-.header .navbar li a:hover {color: black;}
+.header .navbar li a:hover {color:aqua;}
         
- /*Barra de Navegacio*/
+ /*Barra de Navegacion*/
 .header .navbar li {
     display: inline-block;
-    padding:20px;
+    /* padding:20px; */
    }
-.navbar {
-    height: 63px;
+
+/* .navbar {
+    height: 50px;
     background-color:#095169;
-   }
+   } */
+
 .navbar a {
     color:white; 
     padding: 0 20px;
     text-decoration: none;
-    text-transform: uppercase;
-    font: 20px "'Roboto Slab', serif";
-    list-style: none;
-    }
+    font-weight: 200;
+    /* text-transform: uppercase; */
+    font-size: 20px;
+    font-family: 'Skranji', cursive;
+    /* list-style: none; */
+}
+
           
  /*MAIN*/
 
     /*quines somos*/
-    .content {padding:80px 0;}
-    .who {display: inline-block;
-        background-image: url(imagenes/oceano.jpg);
+
+    .content {
+        padding:85px 0;
+    }
+    
+    .who {
+        display: inline-block;
+        /* background-image: url(imagenes/oceano.jpg); */
+        background-image: url(imagenes/vista-superior-arena-al-encuentro-agua-mar.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover; 
-        color: white;
-        width: 80%;
-        margin: 50px;
-        border-radius: 10px;
+        /* color: white; */
+        /* margin: 50px; */
+        padding-top: 200px;
+        /* border-radius: 10px; */
      }
-    .who p {
-        max-width: 1055px;
-        margin: 0px auto; 
-        font-size: 35px;
-        font-family:'Skranji', cursive ;
+    .who {
+        /* max-width: 1055px; */
+        margin: auto;
+        padding-right: 200px;
+        padding-left: 200px; 
+        font-size: 30px;
+        font-family:'Inter', sans-serif ;
     }
     .contenedor {
         display:flex; 
         justify-content: center;
         align-items: center;
+        font-family: 'Skranji', cursive;
     }
     
     /*servcios*/
-    .services {
-        background-color: #689195; 
-        color:white;
-        margin: 50px;
-        border-radius: 10px;
-    }
+    /* .services { */
+        /* background-color: #689195;  */
+        /* color:white; */
+        /* margin: 50px; */
+        /* border-radius: 10px; */
+    /* } */
+
      .list-services {
         justify-content:space-around;
         align-items: center;
@@ -102,38 +121,44 @@ body {
         align-items: center;
         text-decoration:none;
         font-size: 30px;
-        color: aliceblue; 
+        color: #0c0636; 
+        font-family: 'Skranji', cursive;
      }
     .list-services a:hover {transform: scale(1.2);color:#095169;}
-    .servicios {
-        background-color: black; 
+    /* .servicios {
+        background-color: #0c0636; 
         border-radius: 15px;
-     }
+     } */
      .list-services img {width: 120px;height: 100px; padding: 15px; display: flex;}
      .list-services img:hover {transform: scale(1.2);color:#095169;}
-    .servicio1 {
-        padding: 25px; 
-        margin: 0px 10px;
-        background-color:black;
+    
+     .servicio1 {
+        padding: 35px; 
+        margin: auto;
+        background-color:#0c0636;
         border-radius: 15px;
-        width: 500px;
+        width: 700px;
         height: 200px;
-        background-color:black;
+        /* background-color:black; */
         text-align: center;
+       
     }
     .servicio2 {
-        padding: 25px; 
+        padding: 35px; 
         margin: 0px 10px;
-        background-color:black;
+        background-color:#0c0636;
         border-radius: 15px; width:500px;
+        width: 700px;
         height: 200px;
-        background-color:black;
-        text-align: center;}
+        /* background-color:black; */
+        text-align: center;
+        
+    }
     /*slider*/
     .slider-frame {
-        width: 1000px;
-        height: auto;
-        margin:50px auto 0;
+        /* width: 1000px; */
+        height: 400px;
+        margin: 10px 0 0 0;
         overflow: hidden;
     }
     
@@ -169,22 +194,24 @@ body {
     }
     /*Promociones*/
     .promociones {
-        background-color:darkcyan; 
+        /* background-color:darkcyan;  */
+        box-shadow:10px 5px 5px grey;
         color:black;
         font-size: 20px;
         width: 800px;
-        height: 450px;
+        height: 620px;
         padding: 20px;
         margin: auto;
-        margin-top: 100px; 
+        margin-top: 20px; 
         border-radius: 45px;
         }
         .promociones:hover {transition:3s;background: url(imagenes/playa.avif);background-position: center;
             background-repeat: no-repeat;
             background-size: cover;}
     .promociones h3 {
-        font-size: 30px;
-        color: white;
+        font-family: 'Skranji', cursive;
+        font-size: 45px;
+        color: #0c0636;
         text-align: center;
         }
     .opciones {
@@ -196,34 +223,52 @@ body {
     .p-form-1 {
         text-align: center; 
         font-size: 12px; 
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-style: oblique;
+        /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-style: oblique; */
         color: black;
       }
     .boton-1 {
-        border-color: blue solid; 
+        /* border-color: blue solid;  */
         margin: 0px;
-        width: 100%; 
-        height: 30px;
+        width: 50%; 
+        height: 50px;
+        border-radius: 10px;
         padding: 5px; 
-        background-color: cadetblue;
+        color: white;
+        background-color: #0c0636;
      }
-            /*localizacion*/
+     
+    .title{
+        margin-top: 50px;
+    }
+
+    .promo{
+        width: 90%;
+    }
+
+
+    /*localizacion*/
+
     .content-localization {
-        background-color: #689195; 
+        /* background-color: #689195;  */
         margin: 50px;
         border-radius: 10px;
         text-align: center;
     }
     .ubicacion { 
-        background-color: black;
-        margin: 20px;
+        background-color: #0c0636;
+        margin: 10px;
+        padding: 20px 130px 20px 130px;
         border-radius: 10px;
-        font-size: 15px;
+        font-size: 16px;
     }
-    .boton {
+    /* .boton {
         background-color: black;
+    } */
+
+    p {
+        color: white;
     }
-    p {color: white;}
+    
     .localizacion {
         width: 700px; 
         height: 350px;
@@ -232,18 +277,21 @@ body {
 
 /*Formulario*/
 .formulario1 {
-    background:#095169;
-    color: white;
+    /* background:#095169; */
+    /* color: white; */
     margin: 20px;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     }
 .formulario {
+    box-shadow:10px 5px 5px grey;
+    background-color:#095169;
     display: grid; 
     grid-template-columns: 1fr 1fr; 
     gap: 20px;
-    background-color: #689195;
+    /* background-color: #689195; */
     margin: 50px;
-    border-radius: 10px
+    border-radius: 10px;
+    padding-bottom: 20px;
     }
 .formulario--label {
     display: block;
@@ -274,12 +322,12 @@ body {
     height: 45px; 
     line-height: 45px; 
     width: 30%; 
-    background-color: #095169; 
+    background-color: #0c0636; 
     color:white ; 
     border-radius: 15px; 
     font-size: 25px; 
-    font-family: Arial, Helvetica, sans-serif;
-    font: 700; 
+    /* font-family: Arial, Helvetica, sans-serif; */
+    /* font: 700;  */
     cursor: pointer;
     transition: .1s ease all; 
    }
@@ -287,7 +335,7 @@ body {
     box-shadow: 300px 20px 300px black;}
 .formulario--mensaje-exitoso {
     font-size: 16px; c
-    olor: yellowgreen;
+    color: yellowgreen;
     display: none;
   }
 .formulario--mensaje-exitoso-activo {display: block;}
@@ -303,14 +351,14 @@ body {
     justify-content:left;
     display:inline-block;
     padding: 20px;
-    margin: 25px;   
+    /* margin: 25px;    */
     list-style:none;
   }
 .pie1 a {
     text-decoration:none;
     color: white;
   }
-.pie1 a:hover {color: blue;}
+.pie1 a:hover {color: aqua;}
 .footer {
     justify-content:center; 
     align-items: center;

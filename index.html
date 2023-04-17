@@ -8,10 +8,14 @@
     <meta name="keywrods" content="agencia, viajes, hospedaje, vuelos, descanso, familia">
     <meta name="description" content="Esta landing page pertenece a una agencia de viajes"> 
     <title>landing page</title>
-    <!--fonds-->
+   
+    <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     
 </head>
@@ -19,55 +23,60 @@
     <!--header-->
 <header >
      <div class="header">
-         <!--logo-->
+         
+        <!-- logo -->
            <div class="logo">
               <img src="imagenes/logotravel.jpg" alt="logo">
            </div>
 
-          <!--barra de navegacion-->
-           <nav >
+          <!-- barra de navegacion -->
+           <nav>
               <ul class="navbar">
-                 <li> <a href="#quienes somos">Quienes Somos</a></li>
+                 <li> <a href="#quienes somos">Quiénes Somos</a></li>
                  <li> <a href="#servicios">Servicios</a></li>
                  <li><a href="#cotizaciones">Promociones</a></li>
-                 <li> <a href="#formulario">Contacto</a></li>
+                 <li> <a href="#formulario1">Contacto</a></li>
               </ul>
-           </nav></>
+            </nav>
      </div>
+
 
 </header>
     
 <main>
-        <!--quienes somos-->
-  <section class = "content who">
+        
+<!--quienes somos-->
+<section class = "content who" id="quienes somos">
 
-    <h2 class="title" id="quienes somos">Quienes Somos</h2>
+    <h2 >Quiénes Somos</h2>
 
     <div class="contenedor">
-    <div class="quienes"><p>Nos enorgullece afirmar que somos la empresa líder en tours a diversos destinos
+        <p>Nos enorgullece afirmar que somos la empresa líder en tours a diversos destinos
         con una experiencia de mas de 10 años y una pasión infinita por el turismo.
         Ofrecemos todo tipo de tours con experiencias inolvidables, los mejores precios y servicios, 
-        con una calidad equivalente a tus expectativas y mas de 2 mil opiniones positivas.</p></div>
+        con una calidad equivalente a tus expectativas y mas de 2 mil opiniones positivas.
+        </p>
+    </div>
     
-  </section>
-<!--servicios-->
-<section class="content services">
+</section>
 
-    <h2 class="title" id="servicios">Servicios</h2>
+
+  <!--servicios-->
+<section class="content services" id="servicios">
+
+    <h2 >Servicios</h2>
    
     <div class="contenedor">
         <div class="servicio1">
-            <p>Travel Agency te propone las mejores ofertas y oportunidades para que viajes  sin gastar de más.
-               Buscamos brindarte la mejor y más personalizada atención para que hagas de tus vacaciones un momento de relax y descanso. Aprovechá nuestras oportunidades en vuelos baratos, promociones aéreas, hoteles,
-             paquetes turísticos, alquiler de autos, actividades, cruceros y seguros de viaje.
+            <p>Travel Agency te propone las mejores ofertas y oportunidades para que viajes sin gastar de más.
+               Buscamos brindarte la mejor y más personalizada atención para que tus vacaciones sean un momento de relax y descanso. Aprovechá nuestras oportunidades en vuelos baratos, promociones aéreas, hoteles, paquetes turísticos, alquiler de autos, actividades, cruceros y seguros de viaje.
             </p>
         </div>
 
         <div class="servicio2">
-           <p>  Llegamos a todo el planeta: Argentina, 
-               Brasil, Caribe, Estados Unidos, Europa y miles de destinos más. Empezá a disfrutar ahora de tu viaje comprando
-               con el mejor precio y la mejor financiación en Travel Agency.
-           </p>
+           <p>  Llegamos a todo el planeta: Argentina, Brasil, Caribe, Estados Unidos, Europa y miles de destinos más. Empezá a disfrutar ahora de tu viaje comprando con el mejor precio y la mejor financiación en Travel Agency. </p><br>
+            <p> Te estamos esperando!!!</p> 
+           
         </div> 
    </div>
 
@@ -87,9 +96,9 @@
         </ul>
 </section>
 <!--promociones-->
-
-    <form class="promociones" id="cotizaciones" >
-        <h3>COTIZA TU VIAJE</h3>
+<section >
+    <form class="promociones" >
+        <h3>Cotiza tu viaje</h3>
         <br>
         <input class= "opciones" type="text" placeholder="Ingresa tu Nombre"> 
         <input class= "opciones" type="email" placeholder="Ingresa tu Email"> 
@@ -122,19 +131,21 @@
            <option value="1">Economico</option>
            <option value="2">Primera clase</option>
        </select>
-           <P class="p-form-1">Completa nuestro fomulario y te enviaremos cotizaciones de acuerdo a tus elecciones</P>
+           <P class="p-form-1">Completa el fomulario y te enviaremos cotizaciones de acuerdo a tus elecciones</P>
         <button type="submit" class="boton-1" onclick="mensaje ()">Enviar</button>
     </form>
-    <div class="title"><h2>Promociones</h2><img src="imagenes/promociones.jpg" alt="promociones"></div>
+    <div>
+        <h2 class="title" id="cotizaciones">Promociones</h2>
+        <img class='promo' src="imagenes/promociones.jpg" alt="promociones">
+    </div>
 </section>
 
 <!--localizacion-->
     <section class="content-localization" id="localizacion">
-       <h2 class="title">Ubicacion</h2>
+       <h2 class="title">Ubicación</h2>
         <div class="ubicacion"> 
-            <p>Travel Agency se encuentra en Av. San Martin 1410, en Barrio Palermo, Ciudad de Buenos Aires, podes por tren, desde la estación Retiro o los colectivos que llegan son: por Av. Presidente Perón, 
-                líneas 176 y 182; por Ruta 24 (ex 197) desde la Est. José C. Paz
-                ,las líneas 365, 315, 391, 440, 449 y 749.
+            <p>Travel Agency se encuentra en Av. San Martin 1410, Barrio Palermo, Ciudad de Buenos Aires. Podes llegar por tren, desde la estación Retiro o por los colectivos: por Av. Presidente Perón, 
+                líneas 176 y 182; por Ruta 24 (ex 197) desde la Est. José C. Paz, las líneas 365, 315, 391, 440, 449 y 749.
             </p>
         </div>
         <a href=""><img class = "localizacion" src="imagenes/ubicacion.jpg" alt="localizacion"></a> 
@@ -142,7 +153,7 @@
     
 <!--formulario de contacto-->
  
-    <h2 class="formulario1">FORMULARIO DE CONTACTO</h2>
+    <h2 class="formulario1" id="formulario1">Contacto</h2>
    <form action="" class="formulario" id="formulario">
     
     <!--GRUPO NOMBRE-->
@@ -181,7 +192,7 @@
     <div class="formulario--grupo" id="grupo--terminos"><label class="formulario--label"><input type="checkbox" class = "formulario--checkbox" name="terminos" id="terminos">
     Acepto los Terminos y Condiciones</label></div>
     <div class="formulario--grupo-terminos formulario--grupo-btn-enviar">
-        <button class="formulario--btn" type="submit" >ENVIAR</button>
+        <button class="formulario--btn" type="submit" >Enviar</button>
         <p class=" formulario--mensaje-exitoso" id="formulario--mensaje-exitoso">Formulario enviado exitosamente!!!</p>
     </div>
 </form>
@@ -195,13 +206,13 @@
     <li><a href="#">Twiter</a><img src="imagenes/iconos/002-twitter.png" alt="twiter"></li>
     <li><a href="#">Whatsapp</a><img src="imagenes/iconos/004-whatsapp.png" alt="whatsapp"></li>
 </ul>
-   <nav >
+<nav >
     <ul class="pie1">
        <li> <a href="#quienes somos">Quienes Somos</a></li>
        <li> <a href="#servicios">Servicios</a></li>
        <li><a href="#tarifas">Promociones</a></li>
        <li> <a href="#formulario">Contacto</a></li></ul>
-    </nav>
+</nav>
 <p>Todos los derechos reservados a Travel Agency- E.V.T. Leg. 14771 - Disp. N 671</p>
 </div>
 </footer>
