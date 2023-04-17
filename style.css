@@ -122,7 +122,10 @@ h2 {
         text-decoration:none;
         font-size: 30px;
         color: #0c0636; 
+<<<<<<< HEAD
         font-family: 'Skranji', cursive;
+=======
+>>>>>>> b0fa673d1862822a2594052596ae3b8c32a64206
      }
     .list-services a:hover {transform: scale(1.2);color:#095169;}
     /* .servicios {
@@ -284,7 +287,10 @@ h2 {
     }
 .formulario {
     box-shadow:10px 5px 5px grey;
+<<<<<<< HEAD
     background-color:#095169;
+=======
+>>>>>>> b0fa673d1862822a2594052596ae3b8c32a64206
     display: grid; 
     grid-template-columns: 1fr 1fr; 
     gap: 20px;
